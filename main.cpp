@@ -10,8 +10,6 @@
 #define GPIO_LOW_LEVEL 0
 #define GREEN_LED_BLINK_TIMEOUT 50
 
-
-
 #ifdef USE_HAL_LIB_MBED
 
 #include "stm32f4xx.h"
