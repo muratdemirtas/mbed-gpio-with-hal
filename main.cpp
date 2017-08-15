@@ -12,12 +12,12 @@
 
 #ifdef USE_HAL_LIB_MBED
 
+#if defined(TARGET_CORTEX_M) || (TARGET_NUCLEO_F401RE)
 #include "stm32f4xx.h"
 #include "system_stm32f4xx.h"
 #include "stm32f4xx_hal.h"
 #include "stm32f4xx_hal_gpio.h"
 
-#if defined(TARGET_CORTEX_M) || (TARGET_NUCLEO_F401RE)
 #else#error  "TARGET_NUCLEO_F401RE!"
 #endif
 
